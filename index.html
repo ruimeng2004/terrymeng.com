@@ -11,256 +11,279 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="masthead">
-      <a class="site-title" href="#about">Rui Meng</a>
-      <nav class="masthead-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="nav-name" href="#about">Rui Meng</a>
+        <nav aria-label="Primary navigation">
+          <a href="#about">about</a>
+          <a href="assets/rui-meng-cv.pdf" target="_blank" rel="noreferrer">cv</a>
+          <a href="#news">news</a>
+          <a href="#publications">publications</a>
+          <a href="#research">research</a>
+          <a href="#education">education</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="academic-layout">
-      <aside class="author-card" aria-label="Profile">
-        <img
-          class="author-photo"
-          src="assets/rui-meng-portrait.jpg"
-          alt="Portrait of Rui Meng"
-        />
-        <h1>RUI MENG <span>（孟睿）</span></h1>
-        <p class="preferred-name">Terry Meng</p>
-        <p class="author-role">
-          MS student in Bioinformatics<br />
-          Georgia Institute of Technology
-        </p>
-
-        <div class="profile-links">
-          <a href="mailto:terrymeng2004@gmail.com">Email</a>
-          <a href="mailto:ruimeng@link.cuhk.edu.cn">CUHK Email</a>
-          <a href="assets/rui-meng-cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
-          <a
-            class="scholar-link"
-            href="https://scholar.google.com/citations?hl=zh-TW&amp;view_op=list_works&amp;gmla=AIqSsVtcHORJJxtle1S6Qe3i-XWsUtNAnCPm99GvoOduJxQQ4515jihdUo9Xwxlu1vpnOQ913yXoX1tkluy8Vg8rRFk&amp;user=augMBgYAAAAJ"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="scholar-icon" aria-hidden="true">G</span>
-            Google Scholar
-          </a>
-          <a href="https://terrymeng.com">terrymeng.com</a>
+    <main class="page">
+      <section id="about" class="intro">
+        <div class="intro-copy">
+          <h1>Rui Meng <span>（孟睿）</span></h1>
+          <p class="subtitle">Terry Meng</p>
+          <p class="role">
+            MS student in Bioinformatics at Georgia Institute of Technology
+          </p>
+          <p>
+            I am a computer science student moving into bioinformatics. My
+            research interests include medical AI, computational biology,
+            multimodal learning, drug-drug interaction prediction, and AI agents
+            for clinical decision support.
+          </p>
+          <p>
+            My recent work spans CT-based medical image analysis, Alzheimer's
+            disease clinical data modeling, graph-based drug interaction
+            prediction, and generative modeling for classical Chinese poetry.
+          </p>
+          <div class="tag-list" aria-label="Research interests">
+            <span>Medical AI</span>
+            <span>Bioinformatics</span>
+            <span>Computational Biology</span>
+            <span>Drug Discovery</span>
+            <span>AI Agents</span>
+          </div>
         </div>
-      </aside>
 
-      <div class="content-column">
-        <section id="about" class="content-section about-section">
-          <p class="section-kicker">About Me</p>
-          <h2>Building medical AI systems with a computational biology lens.</h2>
-          <p>
-            I am a computer science student moving into bioinformatics, with
-            research interests in medical AI, computational biology, multimodal
-            learning, drug interaction prediction, and AI agents for clinical
-            decision support.
-          </p>
-          <p>
-            My recent work spans CT-based medical image analysis, Alzheimer’s
-            disease clinical data modeling, and graph-based drug-drug interaction
-            prediction. I am especially interested in connecting biological
-            structure signals, machine learning representations, and agentic
-            reasoning systems.
-          </p>
-
-          <div class="science-card" aria-label="Protein to machine learning to agent concept diagram">
-            <div class="science-node protein-node">
-              <div class="protein-ribbon" aria-hidden="true">
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <strong>Protein</strong>
-              <small>structure signals</small>
-            </div>
-            <div class="science-link" aria-hidden="true"></div>
-            <div class="science-node ml-node">
-              <div class="ml-grid" aria-hidden="true">
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <strong>Machine Learning</strong>
-              <small>representation learning</small>
-            </div>
-            <div class="science-link" aria-hidden="true"></div>
-            <div class="science-node agent-node">
-              <div class="agent-chip" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <strong>Agent</strong>
-              <small>clinical reasoning</small>
-            </div>
+        <aside class="intro-card" aria-label="Profile">
+          <img
+            class="portrait"
+            src="assets/rui-meng-portrait.jpg"
+            alt="Portrait of Rui Meng"
+          />
+          <div class="contact-mini">
+            <p>Georgia Institute of Technology</p>
+            <p>Atlanta, Georgia</p>
+            <a href="mailto:terrymeng2004@gmail.com">terrymeng2004@gmail.com</a>
+            <a href="mailto:ruimeng@link.cuhk.edu.cn">ruimeng@link.cuhk.edu.cn</a>
+            <a
+              class="scholar-link"
+              href="https://scholar.google.com/citations?hl=zh-TW&amp;view_op=list_works&amp;gmla=AIqSsVtcHORJJxtle1S6Qe3i-XWsUtNAnCPm99GvoOduJxQQ4515jihdUo9Xwxlu1vpnOQ913yXoX1tkluy8Vg8rRFk&amp;user=augMBgYAAAAJ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="scholar-icon" aria-hidden="true">G</span>
+              Google Scholar
+            </a>
           </div>
-        </section>
+        </aside>
+      </section>
 
-        <section id="news" class="content-section">
-          <h2>News</h2>
-          <ul class="news-list">
-            <li><time>2026.05</time> Personal academic homepage launched at terrymeng.com.</li>
-            <li><time>2026.05</time> Preparing to begin MS study in Bioinformatics at Georgia Institute of Technology.</li>
-            <li><time>2025.07</time> Started work on a preoperative mRS scoring agent for cranial CT and clinical data.</li>
-          </ul>
-        </section>
-
-        <section id="publications" class="content-section">
-          <h2>Publications</h2>
-          <div class="empty-state">
-            <strong>No publications listed yet.</strong>
-            <p>This section is reserved for future papers, preprints, and manuscripts.</p>
+      <section class="section note-box">
+        <h2>Research theme</h2>
+        <p>
+          I am interested in connecting biological structure signals, machine
+          learning representations, and agentic reasoning systems.
+        </p>
+        <div class="science-card" aria-label="Protein to machine learning to agent concept diagram">
+          <div class="science-node">
+            <div class="protein-ribbon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <strong>Protein</strong>
+            <small>structure signals</small>
           </div>
-        </section>
+          <div class="science-link" aria-hidden="true"></div>
+          <div class="science-node">
+            <div class="ml-grid" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <strong>Machine Learning</strong>
+            <small>representation learning</small>
+          </div>
+          <div class="science-link" aria-hidden="true"></div>
+          <div class="science-node">
+            <div class="agent-chip" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <strong>Agent</strong>
+            <small>clinical reasoning</small>
+          </div>
+        </div>
+      </section>
 
-        <section id="research" class="content-section">
-          <h2>Research Projects</h2>
-          <article class="project-item">
-            <div class="project-year">2025-2026</div>
+      <section id="news" class="section">
+        <div class="section-head">
+          <h2>News &amp; updates</h2>
+          <span>Selected milestones and academic notes.</span>
+        </div>
+        <div class="news-list">
+          <article>
+            <time>May 2026</time>
+            <p>Personal academic homepage launched at terrymeng.com.</p>
+          </article>
+          <article>
+            <time>May 2026</time>
+            <p>Preparing to begin MS study in Bioinformatics at Georgia Institute of Technology.</p>
+          </article>
+          <article>
+            <time>Jul 2025</time>
+            <p>Started work on a preoperative mRS scoring agent for cranial CT and clinical data.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <div class="empty-state">
+          <strong>No publications listed yet.</strong>
+          <p>This section is reserved for future papers, preprints, and manuscripts.</p>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research</h2>
+        <div class="research-list">
+          <article>
+            <time>2025-2026</time>
             <div>
               <h3>High-performance preoperative mRS scoring agent</h3>
               <p>
-                Developed a multimodal medical AI workflow integrating cranial CT
-                scans, clinical variables, visual encoders, and large language
-                models for intracranial hemorrhage diagnosis and modified Rankin
-                Scale scoring.
+                Multimodal medical AI workflow integrating cranial CT scans,
+                clinical variables, visual encoders, and large language models
+                for intracranial hemorrhage diagnosis and modified Rankin Scale
+                scoring.
               </p>
-              <p class="project-meta">Medical AI · CT imaging · multimodal agent</p>
+              <span>Medical AI · CT imaging · multimodal agent</span>
             </div>
           </article>
-          <article class="project-item">
-            <div class="project-year">2025</div>
+          <article>
+            <time>2025</time>
             <div>
               <h3>Triple-stage drug-drug interaction predictor</h3>
               <p>
-                Designed a DDI prediction system covering occurrence prediction,
-                interaction type classification, and severity estimation using
-                molecular representations, graph neural networks, and attention.
+                DDI prediction system covering occurrence prediction, interaction
+                type classification, and severity estimation using molecular
+                representations, graph neural networks, and attention.
               </p>
-              <p class="project-meta">GNN · Mole-BERT · drug discovery</p>
+              <span>GNN · Mole-BERT · drug discovery</span>
             </div>
           </article>
-          <article class="project-item">
-            <div class="project-year">2024</div>
+          <article>
+            <time>2024</time>
             <div>
-              <h3>Alzheimer’s disease classification using deep learning</h3>
+              <h3>Alzheimer's disease classification using deep learning</h3>
               <p>
-                Worked on clinical trial analytics, statistical programming,
-                quality control, and machine learning approaches for biomarker
-                exploration.
+                Clinical trial analytics, statistical programming, quality
+                control, and machine learning workflows for biomarker exploration.
               </p>
-              <p class="project-meta">Clinical data · SAS/R · biomarker discovery</p>
+              <span>Clinical data · SAS/R · biomarker discovery</span>
             </div>
           </article>
-          <article class="project-item">
-            <div class="project-year">2025</div>
+          <article>
+            <time>2025</time>
             <div>
               <h3>Classical Chinese poetry generation</h3>
               <p>
-                Built a SeqGAN-based poetry generation model with bidirectional
-                LSTM, hierarchical attention, reinforcement learning, Monte Carlo
+                SeqGAN-based poetry generation model with bidirectional LSTM,
+                hierarchical attention, reinforcement learning, Monte Carlo
                 search, and metrical constraints.
               </p>
-              <p class="project-meta">Generative modeling · SeqGAN · computational creativity</p>
+              <span>Generative modeling · SeqGAN · computational creativity</span>
             </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section id="education" class="content-section">
-          <h2>Education</h2>
-          <div class="education-list">
-            <article class="education-row">
-              <img src="assets/gatech-logo.png" alt="Georgia Tech seal" />
-              <div>
-                <time>2026-present</time>
-                <h3>Georgia Institute of Technology</h3>
-                <p>MS in Bioinformatics</p>
-              </div>
-            </article>
-            <article class="education-row">
-              <img src="assets/cuhk-logo.png" alt="CUHK emblem" />
-              <div>
-                <time>2022-2026</time>
-                <h3>The Chinese University of Hong Kong</h3>
-                <p>BEng in Computer Science and Engineering</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="experience" class="content-section">
-          <h2>Experience</h2>
-          <ul class="compact-list">
-            <li>
-              <strong>Research Assistant</strong>, Shenzhen Research Institute of Big Data,
-              CUHK-Shenzhen. Medical image analysis and mRS scoring agent development.
-            </li>
-            <li>
-              <strong>Research Assistant</strong>, Warshel Institute for Computational Biology,
-              CUHK-Shenzhen. Triple-stage drug-drug interaction prediction.
-            </li>
-            <li>
-              <strong>Data Analyst Intern</strong>, Pfizer China. Clinical trial analytics and
-              Alzheimer’s disease classification.
-            </li>
-          </ul>
-        </section>
-
-        <section class="content-section">
-          <h2>Honors and Service</h2>
-          <ul class="compact-list">
-            <li>Bowen Scholarship, CUHK-Shenzhen, 2022-2026.</li>
-            <li>Initiator, CUHK-Shenzhen Runze Reading Club.</li>
-            <li>Volunteer, Shenzhen entrance examination volunteer program.</li>
-          </ul>
-        </section>
-
-        <section id="contact" class="content-section contact-section">
-          <h2>Contact</h2>
-          <p>
-            I am open to research conversations around medical AI, computational
-            biology, bioinformatics, and agentic systems for scientific discovery.
-          </p>
-          <div class="contact-row">
-            <a href="mailto:terrymeng2004@gmail.com">terrymeng2004@gmail.com</a>
-            <a href="mailto:ruimeng@link.cuhk.edu.cn">ruimeng@link.cuhk.edu.cn</a>
-            <a href="assets/rui-meng-cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
-          </div>
-        </section>
-
-        <section class="content-section visitor-section">
-          <h2>Visitor Map</h2>
-          <div class="visitor-map live-visitor-map" aria-label="Live visitor globe">
-            <div class="visitor-widget">
-              <script
-                type="text/javascript"
-                id="mmvst_globe"
-                src="https://mapmyvisitors.com/globe.js?d=OukS6xK1R9fKhjOz-oGH6oM6sh-_NEj8mvlJ8hKmIkA"
-              ></script>
-            </div>
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-list">
+          <article>
+            <img src="assets/gatech-logo.png" alt="Georgia Tech seal" />
             <div>
-              <strong>Live global visitor map</strong>
-              <p>
-                Approximate visit locations are visualized through a
-                MapMyVisitors globe widget.
-              </p>
+              <time>2026-present</time>
+              <h3>Georgia Institute of Technology</h3>
+              <p>MS in Bioinformatics</p>
             </div>
-          </div>
-        </section>
+          </article>
+          <article>
+            <img src="assets/cuhk-logo.png" alt="CUHK emblem" />
+            <div>
+              <time>2022-2026</time>
+              <h3>The Chinese University of Hong Kong</h3>
+              <p>BEng in Computer Science and Engineering</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <footer class="site-footer">
-          <span>Powered by Cloudflare Workers &amp; Pages.</span>
-          <a href="https://github.com/ruimeng2004/terrymeng.com" target="_blank" rel="noreferrer">
-            Source on GitHub
-          </a>
-        </footer>
-      </div>
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <ul class="text-list">
+          <li>
+            <strong>Research Assistant</strong>, Shenzhen Research Institute of Big Data,
+            CUHK-Shenzhen. Medical image analysis and mRS scoring agent development.
+          </li>
+          <li>
+            <strong>Research Assistant</strong>, Warshel Institute for Computational Biology,
+            CUHK-Shenzhen. Triple-stage drug-drug interaction prediction.
+          </li>
+          <li>
+            <strong>Data Analyst Intern</strong>, Pfizer China. Clinical trial analytics and
+            Alzheimer's disease classification.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Honors and service</h2>
+        <ul class="text-list">
+          <li>Bowen Scholarship, CUHK-Shenzhen, 2022-2026.</li>
+          <li>Initiator, CUHK-Shenzhen Runze Reading Club.</li>
+          <li>Volunteer, Shenzhen entrance examination volunteer program.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          I am open to research conversations around medical AI, computational
+          biology, bioinformatics, and agentic systems for scientific discovery.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:terrymeng2004@gmail.com">terrymeng2004@gmail.com</a>
+          <a href="mailto:ruimeng@link.cuhk.edu.cn">ruimeng@link.cuhk.edu.cn</a>
+          <a href="assets/rui-meng-cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
+        </div>
+      </section>
+
+      <section class="section visitor-section">
+        <h2>Visitor Map</h2>
+        <div class="visitor-map" aria-label="Live visitor globe">
+          <div class="visitor-widget">
+            <script
+              type="text/javascript"
+              id="mmvst_globe"
+              src="https://mapmyvisitors.com/globe.js?d=OukS6xK1R9fKhjOz-oGH6oM6sh-_NEj8mvlJ8hKmIkA"
+            ></script>
+          </div>
+          <div>
+            <strong>Live global visitor map</strong>
+            <p>
+              Approximate visit locations are visualized through a MapMyVisitors
+              globe widget.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>Powered by Cloudflare Workers &amp; Pages.</span>
+        <a href="https://github.com/ruimeng2004/terrymeng.com" target="_blank" rel="noreferrer">
+          Source on GitHub
+        </a>
+      </footer>
     </main>
   </body>
 </html>
