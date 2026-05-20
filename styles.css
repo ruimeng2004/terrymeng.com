@@ -12,6 +12,24 @@
   --gold: #b3a369;
   --teal: #178f8a;
   --blue: #003057;
+  --nav-bg: rgba(255, 255, 255, 0.96);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #edf2f3;
+  --muted: #a9b5ba;
+  --link: #8ec7ff;
+  --line: #344146;
+  --soft-line: #263238;
+  --wash: #151d20;
+  --card: #0f1518;
+  --brick: #e39a86;
+  --green: #8bbeb2;
+  --gold: #d3c17c;
+  --teal: #72d6d0;
+  --blue: #9dc8ff;
+  --nav-bg: rgba(15, 21, 24, 0.94);
 }
 
 * {
@@ -45,7 +63,7 @@ a:hover {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
 }
 
@@ -71,6 +89,32 @@ a:hover {
   gap: 16px;
   font-size: 0.95rem;
   font-weight: 750;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--wash);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.theme-icon {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+:root[data-theme="dark"] .theme-icon {
+  background: transparent;
+  box-shadow: inset -5px -3px 0 1px var(--ink);
 }
 
 .site-nav nav a {
@@ -152,6 +196,10 @@ a:hover {
   object-position: center 22%;
   border-radius: 8px;
   box-shadow: 0 12px 36px rgba(32, 36, 38, 0.12);
+}
+
+:root[data-theme="dark"] .portrait {
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.35);
 }
 
 .contact-mini {
@@ -263,7 +311,7 @@ a:hover {
   padding: 14px;
   border: 1px solid rgba(49, 95, 85, 0.18);
   border-radius: 8px;
-  background: #fff;
+  background: var(--card);
   text-align: center;
 }
 
@@ -499,6 +547,12 @@ a:hover {
   border-radius: 8px;
   background:
     radial-gradient(circle at 50% 44%, rgba(234, 243, 245, 0.9), rgba(255, 255, 255, 0.72) 60%),
+    var(--card);
+}
+
+:root[data-theme="dark"] .visitor-widget {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(42, 57, 62, 0.9), rgba(15, 21, 24, 0.72) 60%),
     var(--card);
 }
 
