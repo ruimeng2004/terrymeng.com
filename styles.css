@@ -114,8 +114,8 @@ a:hover {
 }
 
 :root[data-theme="dark"] .theme-icon {
-  width: 22px;
-  height: 22px;
+  width: 27px;
+  height: 27px;
   background: url("assets/sun-white.png") center / contain no-repeat;
   box-shadow: none;
 }
