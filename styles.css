@@ -116,67 +116,8 @@ a:hover {
 :root[data-theme="dark"] .theme-icon {
   width: 22px;
   height: 22px;
-  background: #1d4f91;
+  background: url("assets/sun-white.png") center / contain no-repeat;
   box-shadow: none;
-}
-
-:root[data-theme="dark"] .theme-icon::before,
-:root[data-theme="dark"] .theme-icon::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  content: "";
-  transform: translate(-50%, -50%);
-}
-
-:root[data-theme="dark"] .theme-icon::before {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow:
-    0 -8px 0 -2px #fff,
-    0 8px 0 -2px #fff,
-    8px 0 0 -2px #fff,
-    -8px 0 0 -2px #fff,
-    5.7px 5.7px 0 -2px #fff,
-    -5.7px 5.7px 0 -2px #fff,
-    5.7px -5.7px 0 -2px #fff,
-    -5.7px -5.7px 0 -2px #fff;
-}
-
-:root[data-theme="dark"] .theme-icon::after {
-  width: 18px;
-  height: 18px;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0 7deg,
-    #fff 7deg 13deg,
-    transparent 13deg 37deg,
-    #fff 37deg 43deg,
-    transparent 43deg 67deg,
-    #fff 67deg 73deg,
-    transparent 73deg 97deg,
-    #fff 97deg 103deg,
-    transparent 103deg 127deg,
-    #fff 127deg 133deg,
-    transparent 133deg 157deg,
-    #fff 157deg 163deg,
-    transparent 163deg 187deg,
-    #fff 187deg 193deg,
-    transparent 193deg 217deg,
-    #fff 217deg 223deg,
-    transparent 223deg 247deg,
-    #fff 247deg 253deg,
-    transparent 253deg 277deg,
-    #fff 277deg 283deg,
-    transparent 283deg 307deg,
-    #fff 307deg 313deg,
-    transparent 313deg 337deg,
-    #fff 337deg 343deg,
-    transparent 343deg 360deg
-  );
-  clip-path: circle(50%);
 }
 
 .site-nav nav a {
