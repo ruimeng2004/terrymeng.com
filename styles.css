@@ -106,15 +106,33 @@ a:hover {
 
 .theme-icon {
   position: relative;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background: var(--ink);
+  background: transparent;
+  box-shadow: inset -5px -3px 0 1px var(--ink);
 }
 
 :root[data-theme="dark"] .theme-icon {
-  background: transparent;
-  box-shadow: inset -5px -3px 0 1px var(--ink);
+  background: var(--ink);
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .theme-icon::before,
+:root[data-theme="dark"] .theme-icon::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--ink);
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+:root[data-theme="dark"] .theme-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .site-nav nav a {

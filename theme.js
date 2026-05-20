@@ -6,6 +6,10 @@ const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matc
 function setTheme(theme) {
   root.dataset.theme = theme;
   themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+  themeToggle.setAttribute(
+    "aria-label",
+    theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+  );
   localStorage.setItem("theme", theme);
 }
 
