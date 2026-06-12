@@ -526,6 +526,12 @@ a:hover {
     var(--card);
 }
 
+.visitor-frame {
+  width: 100%;
+  min-height: 260px;
+  border: 0;
+}
+
 .visitor-map strong {
   display: block;
   margin-bottom: 6px;
