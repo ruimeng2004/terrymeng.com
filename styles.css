@@ -97,14 +97,17 @@ a:hover {
   height: 38px;
   place-items: center;
   flex: 0 0 auto;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--wash);
   color: var(--ink);
   cursor: pointer;
+  line-height: 1;
 }
 
 .theme-icon {
+  display: block;
   position: relative;
   width: 18px;
   height: 18px;
