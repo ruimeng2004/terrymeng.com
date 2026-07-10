@@ -19,3 +19,17 @@ themeToggle.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
   setTheme(nextTheme);
 });
+
+const visitorLoadButton = document.querySelector(".visitor-load");
+
+if (visitorLoadButton) {
+  visitorLoadButton.addEventListener("click", () => {
+    const widget = visitorLoadButton.closest(".visitor-map").querySelector(".visitor-widget");
+    const frame = document.createElement("iframe");
+    frame.className = "visitor-frame";
+    frame.title = "MapMyVisitors visitor map";
+    frame.src = visitorLoadButton.dataset.visitorSrc;
+    widget.replaceChildren(frame);
+    visitorLoadButton.remove();
+  });
+}

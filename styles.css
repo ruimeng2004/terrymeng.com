@@ -518,6 +518,7 @@ a:hover {
 }
 
 .visitor-widget {
+  position: relative;
   display: grid;
   min-height: 260px;
   place-items: center;
@@ -527,6 +528,74 @@ a:hover {
   background:
     radial-gradient(circle at 50% 44%, rgba(234, 243, 245, 0.9), rgba(255, 255, 255, 0.72) 60%),
     var(--card);
+}
+
+.visitor-globe {
+  position: relative;
+  width: min(220px, 72%);
+  aspect-ratio: 1;
+  border: 1px solid rgba(31, 94, 140, 0.24);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 36% 28%, rgba(255, 255, 255, 0.96) 0 5%, transparent 6%),
+    radial-gradient(circle at 42% 36%, rgba(255, 255, 255, 0.9) 0 10%, transparent 11%),
+    radial-gradient(circle at 58% 48%, rgba(255, 255, 255, 0.88) 0 13%, transparent 14%),
+    radial-gradient(circle at 44% 68%, rgba(255, 255, 255, 0.9) 0 8%, transparent 9%),
+    linear-gradient(120deg, rgba(23, 143, 138, 0.74), rgba(31, 94, 140, 0.82));
+  box-shadow: inset -22px -18px 34px rgba(0, 0, 0, 0.14), 0 18px 32px rgba(31, 94, 140, 0.14);
+}
+
+.visitor-globe::before,
+.visitor-globe::after,
+.visitor-orbit {
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  content: "";
+}
+
+.visitor-globe::before {
+  transform: scaleX(0.42);
+}
+
+.visitor-globe::after {
+  transform: rotate(90deg) scaleX(0.42);
+}
+
+.visitor-orbit {
+  inset: 22%;
+  transform: rotate(-28deg) scaleY(0.36);
+}
+
+.visitor-dot {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--card);
+  border-radius: 50%;
+  background: var(--brick);
+  box-shadow: 0 0 0 5px rgba(169, 86, 66, 0.18);
+}
+
+.dot-atlanta {
+  left: 28%;
+  top: 43%;
+}
+
+.dot-hongkong {
+  right: 25%;
+  top: 50%;
+}
+
+.dot-europe {
+  left: 49%;
+  top: 32%;
+}
+
+.dot-west {
+  left: 18%;
+  top: 54%;
 }
 
 .visitor-frame {
@@ -541,8 +610,28 @@ a:hover {
 }
 
 .visitor-map p {
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--muted);
+}
+
+.visitor-load {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--link);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.visitor-load:hover {
+  border-color: var(--link);
 }
 
 .site-footer {

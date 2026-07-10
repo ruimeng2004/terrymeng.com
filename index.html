@@ -262,21 +262,25 @@
 
       <section class="section visitor-section">
         <h2>Visitor Map</h2>
-        <div class="visitor-map" aria-label="Live visitor map">
+        <div class="visitor-map" aria-label="Visitor map">
           <div class="visitor-widget">
-            <iframe
-              class="visitor-frame"
-              title="MapMyVisitors visitor map"
-              src="visitor-map.html"
-              loading="lazy"
-            ></iframe>
+            <div class="visitor-globe" aria-hidden="true">
+              <span class="visitor-orbit"></span>
+              <span class="visitor-dot dot-atlanta"></span>
+              <span class="visitor-dot dot-hongkong"></span>
+              <span class="visitor-dot dot-europe"></span>
+              <span class="visitor-dot dot-west"></span>
+            </div>
           </div>
           <div>
-            <strong>Live visitor map</strong>
+            <strong>Visitor map</strong>
             <p>
-              Approximate visit locations are visualized through a
-              MapMyVisitors map widget.
+              A lightweight local map keeps this page responsive. Load the live
+              MapMyVisitors widget only when you want current visit locations.
             </p>
+            <button class="visitor-load" type="button" data-visitor-src="visitor-map.html">
+              Load live map
+            </button>
           </div>
         </div>
       </section>
